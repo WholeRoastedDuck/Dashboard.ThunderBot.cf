@@ -1,2 +1,2 @@
 # Dashboard.ThunderBot.cf
-Web dashboard
+Issue tracker and project management
