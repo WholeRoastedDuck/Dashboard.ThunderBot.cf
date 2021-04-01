@@ -1,1 +1,8 @@
-reee
+blank_issues_enabled: false
+contact_links:
+  - name: Get help on our support server
+    url: https://discord.gg/6XrEmyR8Qm
+    about: If your issue is simple or you can't reproduce it, you can contact us on our Discord server.
+  - name: ThunderBot Docs
+    url: https://docs.thunderbot.cf
+    about: Check the docs before creating an issue
