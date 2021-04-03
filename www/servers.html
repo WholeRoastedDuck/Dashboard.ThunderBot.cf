@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Your Servers | ThunderBot</title>
+    <meta name="theme-color" content="#fcba03">
+    <meta content="Supercharge your Discord server" property="og:title">
+    <meta content="ThunderBot Dashboard" property="og:site_name">
+    <meta content="Create moderation automations, configure your level up cards, add custom commands, and tons more with the new ThunderBot Web Dashboard." property="og:description">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta content='https://dashboard.thunderbot.cf/construction.png' property='og:image'>
+		<link rel="icon" href="thunderbot.png">
+		<link rel="favicon" href="thunderbot.png">
+		<link rel="shortcut icon" href="thunderbot.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    
+<div class="icon-bar">
+  <a href="javascript:dark()" class="adjust"><i class="fa fa-adjust"></i></a>
+</div>
+    <div class="d-navbar">
+      <ul>
+        <li class="d-logo">
+          <!-- <a href="#">Navbar</a> -->
+          <a href="https://thunderbot.cf">
+            <img src="thunderbot.png">
+            ThunderBot
+          </a>
+        </li>
+        <li class="d-logo">
+          <!-- <a href="#">Navbar</a> -->
+          <a href="/"><b>Dashboard</b>
+          </a>
+        </li>
+        <li>
+          <a href="/servers">Your Servers</a>
+        </li>
+        <li>
+          <a href="/settings">Your Settings</a>
+        </li>
+        <li>
+          <a href="/premium">Upgrade</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/n4MgX3VSVt">Get Support</a>
+        </li>
+        <li>
+          <a href="https://thunderbot.cf">Return to ThunderBot.cf</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-80vw-width">
+      <div class="d-section d-state" id="main">
+          <h1 id="about">Your Servers</h1>
+          <p>Select a server to configure. You must have administrator permissions in a server to manage ThunderBot from the dashboard.</p>
+      </div>
+      <div class="d-section" id="servers">
+        <div class="d-card">
+          <img src="construction.svg" class="d-card-image"><h1>Server</h1>
+        </div>
+      </div>
+      <!--
+      <div class="d-section d-state" id="servers">
+        <h1 id="portfolio">Your Servers</h1>
+        <div id="server-list">
+        <div class="d-card d-pointer" onclick="setState('server-settings');">
+          <img src="thunderbot.png" class="d-card-image">
+          <h2>ThunderBot</h2>
+        </div>
+        </div>
+      </div>
+      -->
+    </div>
+    <script src="script.js"></script>
+    <script>
+      var guilds = <::Frontly.Custom.Guilds::>;
+      var final = '';
+      for (var i = 0; i < guilds.length; i++) {
+        final += `<a href="/servers/${guilds[i].id}" style="text-decoration:none;"><div class="d-card">
+          <img src="${guilds[i].iconURL}" class="d-card-image d-server-icon"><h1 class="d-exclusive">${guilds[i].name}</h1>
+        </div></a>`;
+      }
+      document.querySelector('div#servers').innerHTML = final;
+    </script>
+  </body>
+</html>
+

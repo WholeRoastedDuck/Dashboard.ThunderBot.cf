@@ -7,12 +7,13 @@
     <meta name="theme-color" content="#204f97">
     <meta content="YodaLightsabr" property="og:title">
     <meta content="Hi! I'm Yoda. I like making things. Usually I make websites, Discord bots, and JavaScript modules, but I also like photography and music." property="og:description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-        <meta content='https://yodacode.repl.co/yodalightsabr.png' property='og:image'>
-		<link rel="icon" href="yodalightsabr.png">
-		<link rel="favicon" href="yodalightsabr.png">
-		<link rel="shortcut icon" href="yodalightsabr.png">
+        <meta content='https://dashboard.thunderbot.cf/thunderbot.png' property='og:image'>
+		<link rel="icon" href="thunderbot.png">
+		<link rel="favicon" href="thunderbot.png">
+		<link rel="shortcut icon" href="thunderbot.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
@@ -21,22 +22,30 @@
       <ul>
         <li class="d-logo">
           <!-- <a href="#">Navbar</a> -->
-          <a href="/">
-            <img src="yodalightsabr.png">
-            YodaLightsabr
+          <a href="https://thunderbot.cf">
+            <img src="thunderbot.png">
+            ThunderBot
+          </a>
+        </li>
+        <li class="d-logo">
+          <!-- <a href="#">Navbar</a> -->
+          <a href="/"><b>Dashboard</b>
           </a>
         </li>
         <li>
-          <a href="#about">About Me</a>
+          <a href="javascript:setState('servers');">Servers</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="javascript:setState('your-settings');">Your Settings</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="https://docs.thunderbot.cf">Documentation</a>
         </li>
         <li>
-          <a href="https://blog.yodacode.repl.co">Blog</a>
+          <a href="https://thunderbot.cf/premium">Upgrade</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/n4MgX3VSVt">Get Support</a>
         </li>
       </ul>
     </div>
@@ -49,56 +58,177 @@
       <p class="d-image-text">Juneau, Alaska</p>
       </div>
       -->
-      <div class="d-section">
-        <h1 id="about">Hi! I'm Yoda.</h1>
-        <p>I like making things. Usually I make websites, Discord bots, and JavaScript modules, but I also like photography and music.</p>
+      <div class="d-section d-state" id="main">
+        <h1 id="about">ThunderBot Web Dashboard <span style="font-weight:400;">Version 2.0</span></h1>
+        <p>Welcome to the new and improved ThunderBot Web Dashboard! This dashboard adds new features, looks 10x better, and is easier to navigate. If you have any questions, comments, or concerns, you can reach us by clicking on the "Get Support" button. Want to get started? Just select a server from the servers menu.</p>
       </div>
-      <div class="d-section">
-        <h1 id="portfolio">Projects</h1>
-        <div class="d-card">
-        <img src="thunderbot.png" class="d-card-image">
+      <div class="d-section d-state" id="servers">
+        <h1 id="portfolio">Your Servers</h1>
+        <div id="server-list">
+        <div class="d-card d-pointer" onclick="setState('server-settings');">
+          <img src="thunderbot.png" class="d-card-image">
           <h2>ThunderBot</h2>
-          <p>ThunderBot is a multi-purpouse Discord bot that features an economy system, music, leveling, games, moderation tools, memes, web searching, and image generation. You can check it out at <a href="https://thunderbot.cf">ThunderBot.cf</a>.</p>
         </div>
-        <div class="d-card">
-        <img src="disguard.png" style="background-color:#7289da;" class="d-card-image">
-          <h2>DisGuard</h2>
-          <p>DisGuard is a bot that allows you to password-protect invite links, and has a lot more planned in the near-future. DisGuard also has a website, at <a href="https://disguard.cf">DisGuard.cf</a>.</p>
-        </div>
-        <div class="d-card">
-        <img src="ognom.png" style="background-color:#7289da;" class="d-card-image">
-          <h2>OgnomDB</h2>
-          <p>In case you haven't noticed, Ognom is Mongo spelled backwards. OgnomDB has a similar interface to Quick.db, but is a wrapper of NeDB instead, which makes it asynchronous and reduces data loss. You can view it on GitHub <a href="https://github.com/YodaLightsabr/OgnomDB">here</a>.</p>
-        </div>
-        <div class="d-card">
-        <img src="frontly.png" style="background-color:#7289da;" class="d-card-image">
-          <h2>Frontly.js</h2>
-          <p>Frontly.js lets you quickly make dynamic webpages in Node.js. Its easy to use and has a simple syntax. It's on NPM at <code>frontly</code> and can be found on GitHub <a href="https://github.com/YodaLightsabr/Frontly.js">here</a>.</p>
         </div>
       </div>
-      <div class="d-section">
-        <h1 id="contact">Let's get in touch.</h1>
-        <p>You can reach me one of my socials, or fill out the form below.</p>
-        <a href="https://github.com/YodaLightsabr" class="d-social" target="_blank">
-          <img src="github.png" class="d-social">
-        </a>
-        <a href="https://discord.gg/M8YY32acjm" class="d-social" target="_blank">
-          <img src="discord.jpg" class="d-social">
-        </a>
-        <a href="mailto:yodalightsabr@thunderbot.cf" class="d-social" target="_blank">
-          <img src="email.png" class="d-social">
-        </a>
-        <a href="https://replit.com/@YodaCode" class="d-social" target="_blank">
-          <img src="replit.png" class="d-social">
-        </a>
-        <form action="/" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="body" placeholder="Message" required></textarea>
-          <input type="submit" value="Send Message">
-        </form>
+      <div class="d-section d-state" id="server-settings">
+        <h1 id="portfolio">Server Settings</h1>
+        <div class="d-card d-pointer" id="settings-server">
+          <img src="thunderbot.png" class="d-card-image">
+          <h2>ThunderBot</h2>
+        </div>
+      </div>
+      <div class="d-section d-state" id="your-settings">
+        <h1 id="portfolio">Your Settings</h1>
+        <div class="d-card d-pointer">
+          <img id="avatar" src="yodalightsabr.png" class="d-card-image">
+          <h2 id="tag">YodaLightsabr#6565</h2>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://ThundeBot.yodacode.repl.co/socket.io/socket.io.js"></script>
+    <script>
+      var currentState = "";
+      setState('main');
+      var connectionID = 'lol no kenekt yet';
+      const urlParams = new URLSearchParams(window.location.search);
+      var userdata;
+      var g;
+      var socket = io('https://ThundeBot.yodacode.repl.co');
+      socket.on('oauth',console.log);
+      socket.on('customevent',console.log);
+      var localID = localStorage.getItem('session');
+      if (localID == null) {
+        if (location.href.includes('code')) {
+          socket.emit('oauth',{code:urlParams.get('code')});
+        } else {
+          location.replace('https://discord.com/api/oauth2/authorize?client_id=783743297453686795&redirect_uri=https%3A%2F%2Fdashboard.thunderbot.cf&response_type=code&scope=guilds%20identify&20email');
+        }
+      } else {
+        socket.emit('guilds',localID);
+        socket.emit('userdata',localID);
+        socket.emit('avatar',localID);
+        setTimeout(() => {
+          if ((userdata || {}).avatar) {
+            
+          } else {
+            location.replace('https://discord.com/api/oauth2/authorize?client_id=783743297453686795&redirect_uri=https%3A%2F%2Fdashboard.thunderbot.cf&response_type=code&scope=guilds%20identify&20email')
+          }
+        }, 2000);
+        socket.on('oauth',aconnectionID => {
+          connectionID = aconnectionID;
+        });
+      }
+      socket.on('userdata', (data) => {
+        userdata = data;
+        document.getElementById('tag').innerText = `${userdata.username}#${userdata.discriminator}`;
+      });
+      socket.on('avatar', (avatar) => {
+        userdata.avatar = avatar;
+        document.getElementById('avatar').src = userdata.avatar;
+      });
+      document.getElementById('server-list').innerHTML = `<div class="d-card d-pointer">
+          <img src="https://thomas.vanhoutte.be/miniblog/wp-content/uploads/light_blue_material_design_loading.gif" class="d-card-image">
+          <h2>Your servers are still loading...</h2>
+        </div>`;
+      socket.on('guilds', (guilds) => {
+        g = guilds;
+        console.log(guilds);
+        var q = "";
+        var ok = Object.keys(guilds);
+        var ov = Object.values(guilds);
+        for (var i = 0; i < ok.length; i++) {
+          q +=  `<div class="d-card d-pointer" onclick="serverSettings('${ov[i].avatar || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaME9jE-7IQY70AeaYe-FkqyMtTknZiwCC8w&usqp=CAU"}', '${ov[i].name || "Untitled Discord Server"}');">
+            <img src="${ov[i].avatar || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaME9jE-7IQY70AeaYe-FkqyMtTknZiwCC8w&usqp=CAU"}" class="d-card-image">
+            <h2>${ov[i].name || "Untitled Discord Server"}</h2>
+          </div>`;
+        }
+        document.getElementById('server-list').innerHTML = q;
+      });
+      socket.on('reload', () => {
+        location.reload();
+      });
+      var premium;
+      var card;
+      var card2;
+      var chosenGuild = "";
+      socket.on('updatesettings',console.log);
+      socket.on('getprefix', (prefix) => {
+        console.log(prefix);
+      });
+      socket.on('getsettings', (settings) => {
+        var q = card2 || "default";
+        var a = "#2"+q;
+        console.log(a);
+
+      });
+      socket.on('getusersettings', (settings) => {
+        premium = settings.premium;
+        card = settings.background;
+        var q = card || "default";
+      });
+      function openGuild(id) {
+        socket.emit('getprefix',''+id+'');
+        socket.emit('getsettings',''+id);
+        socket.emit('getusersettings',''+userdata.id);
+        console.log(id);
+        chosenGuild = id;
+      }
+      function openUserSettings() {
+        socket.emit('getusersettings',''+userdata.id);
+
+      }
+      function closeSettings(save) {
+        if (save) {
+          socket.emit('updatesettings', {
+            id: chosenGuild,
+            auth: connectionID,
+            settings: {
+              prefix: document.getElementById("prefix").value,
+              memes: document.getElementById("memes").checked,
+              levelmsgs: document.getElementById("levelmsgs").checked,
+              automeme: document.getElementById("automeme").checked,
+              ff: document.getElementById("ff").checked,
+              anime: document.getElementById("anime").checked,
+              filter: document.getElementById("profanity").checked,
+              background: card2,
+              color: '#ffffff'
+            }
+          });
+        }
+      }
+      function closeUserSettings(save) {
+        if (save) {
+          socket.emit('updateusersettings',{
+            id: userdata.id,
+            auth: connectionID,
+            settings: {
+              background: card,
+              color: '#ffffff'
+            }
+          });
+        }
+      }
+
+
+      // util functions
+      function serverSettings(image, name) {
+        setState('server-settings');
+        var ssimg = document.querySelector('#settings-server > img');
+        var ssh = document.querySelector('#settings-server > h2');
+        ssimg.src = image;
+        ssh.innerText = name;
+      }
+      function setState(state) {
+        currentState = state;
+        var element = document.getElementById(state);
+        if (element == null) return;
+        document.querySelectorAll('.d-state').forEach(elem => {
+          elem.classList.add('d-hidden');
+        });
+        element.classList.remove('d-hidden');
+      }
+      </script>
   </body>
 </html>

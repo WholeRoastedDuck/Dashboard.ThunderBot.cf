@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Plugins | ThunderBot</title>
+    <meta name="theme-color" content="#fcba03">
+    <meta content="Supercharge your Discord server" property="og:title">
+    <meta content="ThunderBot Dashboard" property="og:site_name">
+    <meta content="Create moderation automations, configure your level up cards, add custom commands, and tons more with the new ThunderBot Web Dashboard." property="og:description">
+
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+        <meta content='https://dashboard.thunderbot.cf/construction.png' property='og:image'>
+		<link rel="icon" href="/thunderbot.png">
+		<link rel="favicon" href="/thunderbot.png">
+		<link rel="shortcut icon" href="/thunderbot.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    
+<div class="icon-bar">
+  <a href="javascript:dark()" class="adjust"><i class="fa fa-adjust"></i></a>
+</div>
+    <div class="d-navbar">
+      <ul>
+        <li class="d-logo">
+          <!-- <a href="#">Navbar</a> -->
+          <a href="/">
+            <img src="/thunderbot.png">
+            ThunderBot
+          </a>
+        </li>
+        <li class="d-logo">
+          <!-- <a href="#">Navbar</a> -->
+          <a href="/"><b>Dashboard</b>
+          </a>
+        </li>
+        <li>
+          <a href="/servers/<::Frontly.Custom.Server::>/plugins">Plugins</a>
+        </li>
+        <li>
+          <a href="/servers/<::Frontly.Custom.Server::>/settings">Settings</a>
+        </li>
+        <li>
+          <a href="/servers/<::Frontly.Custom.Server::>/leaderboard">Leaderboard</a>
+        </li>
+        <li>
+          <a href="/premium">Upgrade</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/n4MgX3VSVt">Get Support</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-80vw-width">
+      <div class="d-card"><img src="<::Frontly.Custom.Icon::>" class="d-card-image d-server-icon"><h1 class="d-exclusive"><::Frontly.Custom.Name::></h1></div>
+          <h1 id="about">Plugins</h1>
+          <p>ThunderBot is fully modular which allows for heavy configuration. Click a plugin to enable it, disable it, or change it's settings.</p>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/levels" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/trophy.svg" class="d-card-image"><h1>Levels</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Let your users gain XP and levels by participating in the chat!</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/moderation" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/moderation.svg" class="d-card-image"><h1>Moderation</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Sit back and relax while ThunderBot moderates your server for you</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/music" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/music.svg" class="d-card-image"><h1>Music</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Listen to your favorite tunes right within Discord</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/economy" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/coin.svg" class="d-card-image"><h1>Economy</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Play ThunderBot currency games</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/trivia" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/trivia.svg" class="d-card-image"><h1>Trivia</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Play multiple-choice trivia</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/search" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/search.svg" class="d-card-image"><h1>Search</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Search the internet</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/minigames" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/tictactoe.svg" class="d-card-image"><h1>Minigames</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Play minigames such as Tic Tac Toe</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/custom-commands" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/customcommand.svg" class="d-card-image"><h1>Custom Commands</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Add awesome custom commands to your server</p>
+        </div>
+      </a>
+      <a href="/servers/<::Frontly.Custom.Server::>/plugins/memes" class="d-wrapper-link">
+        <div class="d-card">
+          <img src="/meme.svg" class="d-card-image"><h1>Memes</h1><div class="checkbox"><div></div></div><br>
+          <p class="d-plugin-desc">Manage memes in your server</p>
+        </div>
+      </a>
+      <!--
+      <div class="d-card">
+        <img src="/prefix.svg" class="d-card-image"><h1>Prefix</h1><br>
+        <p class="d-plugin-desc">Change ThunderBot's prefix</p>
+      </div>
+      -->
+      <!--
+      <div class="d-section d-state" id="servers">
+        <h1 id="portfolio">Your Servers</h1>
+        <div id="server-list">
+        <div class="d-card d-pointer" onclick="setState('server-settings');">
+          <img src="thunderbot.png" class="d-card-image">
+          <h2>ThunderBot</h2>
+        </div>
+        </div>
+      </div>
+      -->
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
